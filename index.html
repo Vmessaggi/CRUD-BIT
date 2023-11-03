@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <nav class="btn_social">  
+      <ul>
+          <li><a href="https://www.facebook.com/vmessaggi" target="_blank" title="facebook"><i class="bx bxl-facebook-circle"></i></a></li>
+          <li><a href="https://www.instagram.com/vmessaggi/" target="_blank" title="instagram"><i class="bx bxl-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCxvzE-v1bI4kkU5wyn5iLng" target="_blank" title="youtube"><i class="bx bxl-youtube"></i></a></li>
+          <li><a href="https://github.com/Vmessaggi" target="_blank" title="github"><i class="bx bxl-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/vinicius-messaggi/" target="_blank" title="linkdin"><i class="bx bxl-linkedin-square"></i></a></li>           
+      </ul>
+   </nav>
+    </div>
+    <div class = "top">
+        <h1>Controle financeiro</h1>
+    </div>
+    <div class="resume">
+      <div>
+        Entradas: R$
+        <span class="incomes">0.00</span>
+      </div>
+      <div>
+        Saídas: R$
+        <span class="expenses">0.00</span>
+      </div>
+      <div>
+        Total: R$
+        <span class="total">0.00</span>
+      </div>
+    </div>
+    <div class="newItem">
+      <div class="divDesc">
+        <label for="desc">Descrição</label>
+        <input type="text" id="desc" />
+      </div>
+      <div class="divAmount">
+        <label for="amount">Valor</label>
+        <input type="number" id="amount" />
+      </div>
+      <div class="divType">
+        <label for="type">Tipo</label>
+        <select id="type">
+          <option>Entrada</option>
+          <option>Saída</option>
+        </select>
+      </div>
+      <button id="btnNew">+</button>
+    </div>
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th class="columnAmount">Valor</th>
+            <th class="columnType">Tipo</th>
+            <th class="columnAction"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+  </main>  
+  <script src="script.js"></script>
+</body>
+</html>
